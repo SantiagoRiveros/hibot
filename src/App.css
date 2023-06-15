@@ -1,8 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
 
-.App {
-  text-align: center;
-}
+/* @media (max-width: 600px) {
+  .appContainer{
+    margin-right: -35px
+  }
+  .footer-bottomContainer{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-logos{
+    width: 100px;
+  }
+} */
 
 .App-logo {
   height: 40vmin;
@@ -34,6 +44,7 @@
 
   color: #000000;
 }
+
 
 .NavBar-Container {
   background-color: white;
@@ -72,6 +83,13 @@
 
   color: #3fbac2;
   margin-bottom: 38px;
+  @media only screen and (max-width: 600px) and (min-width: 100px){ 
+    font-size: 25.357px;
+    line-height: 35px;
+    width: 200px;
+    margin-bottom: 20px;
+    margin-top: -50px
+    }
 }
 
 .footer-subContainer{
@@ -79,12 +97,17 @@
   margin-left: 12.15%;
   width: 33%;
   height: 55%;
+ 
 }
 
 .footer-partner{
   width: 242px;
   height: 35.21px;
   margin-right: 48px;
+  @media only screen and (max-width: 600px) and (min-width: 100px){ 
+
+    margin-bottom: 25px;
+    }
 }
 
 .footer-subText{
@@ -96,11 +119,19 @@ line-height: 28px;
 
 color: #FFFFFF;
 margin-bottom: 72px;
+@media only screen and (max-width: 600px) and (min-width: 100px){ 
+
+  margin-bottom: 45px;
+  }
 }
 
 .footer-bottomContainer{
+
   display: flex;
   flex-direction: row;
+  @media only screen and (max-width: 600px) and (min-width: 100px){ 
+    margin-top: -30px;
+    flex-direction: column}
 }
 
 .footer-logos{
@@ -129,11 +160,11 @@ margin-bottom: 72px;
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
